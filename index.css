@@ -1,0 +1,59 @@
+body {
+    background-color: #AAAAAA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page {
+    width: 800px;
+    height: 1200px;
+    background-color: white;
+    margin: 12px;
+    padding: 80px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.char {
+    font-family: sans-serif;
+    line-height: 20px;
+    margin: 0;
+}
+
+@keyframes cursor {
+    0% {
+        background-color: #000408
+    }
+
+    45% {
+        background-color: #000408
+    }
+
+    50% {
+        background-color: transparent
+    }
+
+    95% {
+        background-color: transparent
+    }
+
+    100% {
+        background-color: #000408
+    }
+}
+
+#cursor {
+    position: absolute;
+    height: 20px;
+    width: 2px;
+    background-color: #000408;
+
+    animation-name: cursor;
+    animation-duration: 1.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}

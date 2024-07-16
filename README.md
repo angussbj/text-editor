@@ -1,0 +1,1 @@
+The beginnings of a text editor, written as an exercise in vanilla js
